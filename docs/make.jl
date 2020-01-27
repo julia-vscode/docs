@@ -8,7 +8,7 @@ makedocs(
         "Getting Started" => "gettingstarted.md",
         "User Guide" => Any[
             "Running Code" => "userguide/runningcode.md",
-            "Julia environments" => "userguide/env.md",
+            "Julia Environments" => "userguide/env.md",
             "Code Navigation" => "userguide/codenavigation.md",
             "Editing Code" => "userguide/editingcode.md",
             "Formatting Code" => "userguide/formatter.md",
@@ -18,7 +18,8 @@ makedocs(
             "Linter" => "userguide/linter.md",
             "Tasks" => "userguide/tasks.md",
             "Compiling Sysimages" => "userguide/compilesysimage.md",
-            "Julia Markdown documents" => "userguide/weave.md",
+            "Julia Markdown Documents" => "userguide/weave.md",
+            "Remote Development" => "userguide/remote.md",
             "Settings" => "userguide/settings.md"
         ],
         "Developer Documentation" => Any[
