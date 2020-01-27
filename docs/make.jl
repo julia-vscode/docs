@@ -3,10 +3,13 @@ using Documenter
 makedocs(
     sitename = "Julia VS Code Extension Documentation",
     pages = [
-        "index.md"
+        "Overview" => "index.md",
+        "Setup" => "setup.md",
+        "User Guide" => "userguide.ms"
+
     ]
 )
 
 deploydocs(
-    repo   = "github.com/julia-vscode/julia-vscode-documentation"
+    repo   = "github.com/julia-vscode/docs"
 )

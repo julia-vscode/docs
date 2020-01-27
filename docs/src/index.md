@@ -1,1 +1,1 @@
-# Julia VS Code Extension Documentation
+# Julia VS Code Extension
