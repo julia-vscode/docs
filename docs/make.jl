@@ -5,7 +5,7 @@ makedocs(
     pages = [
         "Overview" => "index.md",
         "Setup" => "setup.md",
-        "User Guide" => "userguide.ms"
+        "User Guide" => "userguide.md"
 
     ]
 )
