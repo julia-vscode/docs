@@ -1,19 +1,3 @@
-var documenterSearchIndex = {"docs": [
-
-{
-    "location": "#",
-    "page": "Julia VS Code Extension Documentation",
-    "title": "Julia VS Code Extension Documentation",
-    "category": "page",
-    "text": ""
-},
-
-{
-    "location": "#Julia-VS-Code-Extension-Documentation-1",
-    "page": "Julia VS Code Extension Documentation",
-    "title": "Julia VS Code Extension Documentation",
-    "category": "section",
-    "text": ""
-},
-
-]}
+var documenterSearchIndex = {"docs":
+[{"location":"userguide/#User-Guide-1","page":"User Guide","title":"User Guide","text":"","category":"section"},{"location":"#Julia-VS-Code-Extension-1","page":"Overview","title":"Julia VS Code Extension","text":"","category":"section"},{"location":"setup/#Setup-1","page":"Setup","title":"Setup","text":"","category":"section"},{"location":"setup/#","page":"Setup","title":"Setup","text":"Getting the julia extension for VS Code to work involves two steps: 1) Install VS Code and 2) install the julia extension. In rare situations you also need to configure the extension to find your Julia installation.","category":"page"},{"location":"setup/#Installing-VS-Code-1","page":"Setup","title":"Installing VS Code","text":"","category":"section"},{"location":"setup/#","page":"Setup","title":"Setup","text":"Just head over to the VS Code homepage and follow the installation instructions for your platform. At the end of this step you should be able to start VS Code.","category":"page"},{"location":"setup/#Install-the-julia-extension-1","page":"Setup","title":"Install the julia extension","text":"","category":"section"},{"location":"setup/#","page":"Setup","title":"Setup","text":"First, start VS Code. Inside VS Code, go to the extensions view either by executing the View Show Extensions command (click View->Command Palette...) or by clicking on the extension icon on the left side of the VS Code window.","category":"page"},{"location":"setup/#","page":"Setup","title":"Setup","text":"In the extensions view, simply search for the term julia in the marketplace search box, then select the julia extension and click the install button. You might have to restart VS Code after this step.","category":"page"},{"location":"setup/#Configure-the-julia-extension-1","page":"Setup","title":"Configure the julia extension","text":"","category":"section"},{"location":"setup/#","page":"Setup","title":"Setup","text":"If you have installed julia into a standard location on Mac or Windows, or if the julia binary is on your PATH, the julia VS Code extension should automatically find your julia installation and you should not need to configure anything.","category":"page"},{"location":"setup/#","page":"Setup","title":"Setup","text":"If the extension does not find your julia installation automatically, or if you want to use a different julia installation than the default one, you can set the juliaexecutablePath to point to the julia executable that the extension should use. In that case the extension will always use that version of julia. To edit your configuration settings, execute the Preferences Open User Settings command (you can also access it via the menu File-Preferences-Settings), and then make sure your user settings include the juliaexecutablePath setting. The format of the string should follow your platform specific conventions, and be aware that the backlash  is the escape character in JSON, so you need to use  as the path separator character on Windows.","category":"page"}]
+}
