@@ -3,10 +3,16 @@ using Documenter
 makedocs(
     sitename = "Julia VS Code Extension Documentation",
     pages = [
-        "Overview" => "index.md",
+        "Home" => "index.md",
         "Setup" => "setup.md",
-        "User Guide" => "userguide.md"
-
+        "Getting Started" => "gettingstarted.md",
+        "User Guide" => Any[
+            "Running Code" => "userguide/runningcode.md",
+            "Tasks" = > "userguide/tasks.md"
+        ],
+        "Developer Documentation" => Any[
+            "Overview" => "devdocs/devdocs.md"
+        ]
     ]
 )
 
