@@ -1,7 +1,7 @@
-## Code Navigation
+# Code Navigation
 
-### Open Package Directory
+## Open Package Directory
 
-### Goto Definition
+## Goto Definition
 
-### Symbols
+## Symbols
