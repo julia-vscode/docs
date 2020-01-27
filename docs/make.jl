@@ -1,7 +1,7 @@
 using Documenter
 
 makedocs(
-    sitename = "Julia VS Code Extension Documentation",
+    sitename = "Julia in VS Code",
     pages = [
         "Home" => "index.md",
         "Setup" => "setup.md",
