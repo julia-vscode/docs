@@ -8,7 +8,7 @@ makedocs(
         "Getting Started" => "gettingstarted.md",
         "User Guide" => Any[
             "Running Code" => "userguide/runningcode.md",
-            "Tasks" = > "userguide/tasks.md"
+            "Tasks" => "userguide/tasks.md"
         ],
         "Developer Documentation" => Any[
             "Overview" => "devdocs/devdocs.md"
