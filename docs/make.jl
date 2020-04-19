@@ -17,6 +17,7 @@ makedocs(
             "Understanding Code" => "userguide/understandingcode.md",
             "Linter" => "userguide/linter.md",
             "Tasks" => "userguide/tasks.md",
+            "Debugging" => "userguide/debugging.md",
             "Compiling Sysimages" => "userguide/compilesysimage.md",
             "Julia Markdown Documents" => "userguide/weave.md",
             "Remote Development" => "userguide/remote.md",
