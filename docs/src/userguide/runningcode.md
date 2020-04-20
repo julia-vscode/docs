@@ -42,7 +42,7 @@ Due to these limitations, most users should use the `Julia: Execute Code Block` 
 
 ### Julia: Execute Code Block (Alt+Enter)
 
-Whenever there is some Julia code selected in the currently active editor, this command will execute the selected code. If no text is selected, the command will identify the smallest self contained code block surround the current cursor position and execute that code block.
+Whenever there is some Julia code selected in the currently active editor, this command will execute the selected code. If no text is selected, the command will identify the extent of the top-level language construct that the cursor is located in (except modules) and execute that code block.
 
 This command uses a different execution model than `Julia: Execute Code` that provides a more robust experience. In particular, it will associate location information with code that is executed, `include` will work correctly with relative paths and macros like `@__DIR__` and `@__FILE__` work as expected.
 
