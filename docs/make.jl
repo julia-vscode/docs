@@ -23,6 +23,9 @@ makedocs(
             "Remote Development" => "userguide/remote.md",
             "Settings" => "userguide/settings.md"
         ],
+        "Updates" => Any[
+            "Version v0.16" => "release-notes/v0_16.md"
+        ],
         "Developer Documentation" => Any[
             "Overview" => "devdocs/devdocs.md"
         ]
