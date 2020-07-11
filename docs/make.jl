@@ -24,6 +24,7 @@ makedocs(
             "Settings" => "userguide/settings.md"
         ],
         "Updates" => Any[
+            "Version v0.17" => "release-notes/v0_17.md",
             "Version v0.16" => "release-notes/v0_16.md"
         ],
         "Developer Documentation" => Any[
