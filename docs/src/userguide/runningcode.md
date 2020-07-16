@@ -41,7 +41,7 @@ There are four commands that you can use to run code from your editor in the Jul
 This command will either send the text that is currently selected in the active editor to the Julia REPL, or it will send the entire line where the cursor is currently positioned when no text is selected. In the latter case it will also advance the cursor to the next line of code.
 
 This command works a little bit like copy-paste: it will literally just copy some code from the editor into the REPL as if that code was typed in the REPL. This design has some consequences that you should keep in mind:
-- when you send something like a function definition to the REPL, no line or file information will be associated with that function. This can be annoying later on, when exceptions that are thrown in this function will not show any location information.
+- When you send something, like a function definition to the REPL, no line or file information will be associated with that function. This can be annoying later on, when exceptions that are thrown in this function will not show any location information.
 - `include` statements will always try to load relative paths relative to the current working directory, not relative to the file from which they are executed.
 - Macros like `@__DIR__` and `@__FILE__` do not work properly.
 
