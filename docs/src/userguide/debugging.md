@@ -19,11 +19,11 @@ If you just click on `Run and Debug` (or press `F5`), the current active Julia f
 
 ![Debugger](../assets/debugger/3.png)
 
-In this example the whole program ran through in one go and finished without any problem. Lets make this example a bit more useful by setting a breakpoint on line 11. We do this by simple clicking with the mouse in the left most column of the code editor:
+In this example the whole program ran through in one go and finished without any problem. Lets make this example a bit more useful by setting a breakpoint on `line 11`. We do this by simple clicking with the mouse in the left most column of the code editor:
 
 ![Debugger](../assets/debugger/4.png)
 
-The red dot shows us that we have now set a breakpoint. Next we start the program again (either by clicking on Run and Debug or pressing F5). When the program reaches line 11, it will now pause:
+The red dot shows us that we have now set a breakpoint. Next we start the program again (either by clicking on `Run and Debug` or pressing `F5`). When the program reaches `line 11`, it will pause:
 
 ![Debugger](../assets/debugger/5.png)
 
@@ -31,11 +31,11 @@ The yellow line shows us the location that we will execute next if we continue t
 
 ![Debugger](../assets/debugger/6.png)
 
-The `Variables` view now shows us what local variables we have in this function and what their current values are. As we step through the program, and eventually reach the end of the bar function, the list of local variables gets longer, i.e. we now also see the values for c and d:
+The `Variables` view now shows us what local variables we have in this function and what their current values are. As we step through the program, and eventually reach the end of the bar function, the list of local variables gets longer, i.e. we now also see the values for `c` and `d`:
 
 ![Debugger](../assets/debugger/7.png)
 
-Let us set another breakpoint on line 15 and then continue the program until it hits that breakpoint. Then we click on `Debug Console` and see a view like this:
+Let us set another breakpoint on `line 15` and then continue the program until it hits that breakpoint. Then we click on `Debug Console` and see a view like this:
 
 ![Debugger](../assets/debugger/8.png)
 
@@ -70,7 +70,7 @@ function breakpoints and condition on breakpoints.
 
 ### Function breakpoints
 
-If you click on the little + sign in the `BREKPOINTS` view, you can add a function breakpoint. Simply enter the name of the function you want to break on. You can also configure it to only break on specific methods by specifying a signature like `foo(::String, ::Number)`.
+If you click on the little `+` sign in the `BREKPOINTS` view, you can add a function breakpoint. Simply enter the name of the function you want to break on. You can also configure it to only break on specific methods by specifying a signature like `foo(::String, ::Number)`.
 
 ### Breakpoint conditions
 
@@ -107,9 +107,9 @@ The breakpoints view has another option called Enable compile mode:
 
 ![Debugger](../assets/debugger/14.png)
 
-The functionality of this option is the following:
+**The functionality of this option is the following:**
 
-if you select this option, breakpoints that are set in any function that is called from the current stack frame will no longer pause code execution. In our example, if you have paused in function foo and then select this option, a breakpoint in bar would no longer pause execution. Breakpoints in foo would still pause the debugger.
+If you select this option, breakpoints that are set in any function that is called from the current stack frame will no longer pause code execution. In our example, if you have paused in function foo and then select this option, a breakpoint in bar would no longer pause execution. Breakpoints in foo would still pause the debugger.
 
 **Why would you ever want to use this feature?**
 
