@@ -1,5 +1,8 @@
 # Code Navigation
-`Tip: You can open any file by its name when you type Ctrl+P (Quick Open).`
+
+## Quick File Navigation
+
+> **Tip**: You can open any file by its name when you type `Ctrl+P` **(Quick Open)**.
 
 When you are working on a task, you will find yourself quickly jumping between the same set of files. You can use two powerful commands to navigate in and across files with easy-to-use key bindings.
 
@@ -13,3 +16,7 @@ Alternatively, you can use `Alt+Left` and `Alt+Right` to navigate between files 
 ## Goto Definition
 
 ## Symbols
+
+You can navigate symbols inside a file with `Ctrl+Shift+O`. By typing `:` the symbols will be grouped by category. Press `Up` or `Down` and navigate to the place you want.
+
+![Symbols](../images/codenavigation/symbols.gif)
