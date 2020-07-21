@@ -13,10 +13,23 @@ Hold `Ctrl` and press `Tab` to view a list of all files open in an editor group.
 Alternatively, you can use `Alt+Left` and `Alt+Right` to navigate between files and edit locations. If you are jumping around between different lines of the same file, these shortcuts allow you to navigate between those locations easily.
 ## Open Package Directory
 
-## Goto Definition
+## Go to Definition
+You can go to the definition of a symbol by pressing `F12`.
 
-## Symbols
+If you press `Ctrl` and hover over a symbol, a preview of the declaration will appear:
+
+![GoToDefination](../images/codenavigation/GoToDefination.png)
+
+> **Tip**: You can jump to the definition with `Ctrl+Click` or open the definition to the side with `Ctrl+Alt+Click`.
+
+## Go to Symbols
 
 You can navigate symbols inside a file with `Ctrl+Shift+O`. By typing `:` the symbols will be grouped by category. Press `Up` or `Down` and navigate to the place you want.
 
-![Symbols](../images/codenavigation/symbols.gif)
+![Go to Symbol](../images/codenavigation/symbols.gif)
+
+## Open Symbol by Name
+
+You can open a particular symbol by its name with `Ctrl+T`, regardless of which file contains it. Type the name of a symbol you want to navigate to, and press `Enter`
+
+![Open Symbol](../images/codenavigation/OpenSymbol.png)
