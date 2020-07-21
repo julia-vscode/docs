@@ -31,7 +31,7 @@ Let's walkthrough a simple program to understand this:
 Write the following code.
 ```
 using Plots
-x = 1:20; y = rand(20); # These are the plotting data 
+x = 1:10; y = rand(10); # These are the plotting data 
 plot(x,y, label="my label")
 ```
 
@@ -39,5 +39,5 @@ Now `Run` this, you can follow the steps [here](https://www.julia-vscode.org/doc
 
 You will get the following graph as a output in a new tab in VSCode:
 
-![Plot Graph](../images/PlotGallery/PlotGallery.png)
+![Plot Graph](../images/PlotGallery/PlotGraph.png)
 
