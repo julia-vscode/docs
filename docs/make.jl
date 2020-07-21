@@ -34,5 +34,6 @@ makedocs(
 )
 
 deploydocs(
-    repo   = "github.com/julia-vscode/docs"
+    repo   = "github.com/julia-vscode/docs";
+    push_preview = true
 )
