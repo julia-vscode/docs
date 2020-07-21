@@ -37,7 +37,7 @@ plot(x,y, label="my label")
 
 Now `Run` this, you can follow the steps [here](https://www.julia-vscode.org/docs/stable/userguide/runningcode/#Running-code-in-the-Julia-REPL-1).
 
-You will get the following graph as a output in a new tab in VSCode:
+You will get something like the following graph as a output in a new tab in VSCode:
 
 ![Plot Graph](../images/PlotGallery/PlotGraph.png)
 
