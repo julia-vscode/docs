@@ -1,4 +1,4 @@
-# Setup
+# *Setup
 
 Getting the Julia extension for VS Code to work involves two steps:
 1) Install VS Code and then,
