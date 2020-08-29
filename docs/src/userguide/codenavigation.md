@@ -1,4 +1,4 @@
-# *Code Navigation
+# Code Navigation
 
 ## Quick File Navigation
 

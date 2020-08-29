@@ -1,4 +1,4 @@
-# *Running Code
+# Running Code
 
 The Julia extension provides a number of different ways to run your Julia code. This section describes all these options, except how to run code in the debugger, which is covered in a separate part of the documentation.
 

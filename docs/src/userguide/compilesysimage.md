@@ -1,4 +1,4 @@
-# *Compiling Sysimages
+# Compiling Sysimages
 
 The Julia VS Code extension makes it easy to compile a custom sysimage for your Julia environments. The extension will also automatically use sysimages for the current environment when it starts a new Julia REPL in VS Code.
 
