@@ -25,3 +25,5 @@ you can build documentations locally and check the results generated in `docs/bu
 $ julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path = pwd())); Pkg.instantiate()'
 $ julia --project=docs/ docs/make.jl
 ```
+
+Or use "Tasks: Run Build Task"->"julia: Build Documentation" in VS Code
