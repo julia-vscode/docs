@@ -30,6 +30,8 @@ pages = [
     ]
 ]
 
+global add_line_annotations
+
 # Add line counts and/or skip empty docs
 function annotate(pages)
     filter(p -> p !== nothing, [
@@ -38,7 +40,11 @@ function annotate(pages)
                 length(readlines(f))
             end
             if numlines > 1 ### Skip empty docs
-                "$title ($numlines lines)" => doc
+                if add_line_annotations
+                    "$title ($numlines lines)" => doc
+                else
+                    "$title" => doc
+                end
             else
                 nothing
             end
@@ -48,6 +54,8 @@ function annotate(pages)
         for (title,doc) in pages
     ])
 end
+
+add_line_annotations = false
 
 pages = annotate(pages)
 
