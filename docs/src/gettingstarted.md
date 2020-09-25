@@ -1,53 +1,47 @@
-## Getting Started
+# Getting Started
 
-In this guide, you will use Julia language to create the simplest Julia "Hello World" application in Visual Studio Code. By using the Julia extension, you make VS Code turn into a great lightweight Julia IDE.
+This guide is intended for new or beginner-level users who are new to the Visual Studio (VS) Code extension. The getting started tasks use the Julia programming language to create a “Hello World” program in VS Code. 
 
-### Prerequisites
-
-You need to first setup your Julia development environment. Specifically, this tutorial requires:
+## Prerequisites
 
 - Julia
 - VS Code
 - VS Code Julia extension
 
-_Note: In rare situations you also need to configure the extension to find your Julia installation._
+## Installation and Configuration
 
 ### Installing Julia
 
-You can install the latest stable version of Julia from Julia homepage
-- Just head over to the [Julia](https://julialang.org/downloads/) homepage.
-- Download and install the version based on the platform you are using.
+Download the latest stable version of Julia, based on the platform you are using, from the [Julia](https://julialang.org/downloads/) homepage.
 
 ### Installing VS Code
 
-If you have not already done so, you can install VS Code from the VS Code homepage
-- Just head over to the [VS Code](https://code.visualstudio.com/) homepage.
-- Follow the installation instructions for your platform.
+Download and install VS Code, based on the platform you are using, from the [VS Code](https://code.visualstudio.com/) homepage.
 
-At the end of this step you should be able to start VS Code.
+### Installing the Julia extension
 
-### Install the Julia extension
-
+- Start or open Visual Studio Code. 
+- Select **View** and then click **Extensions** to open Extension View. 
+- Enter the term `julia` in the marketplace search box. Click the green **Install** button to download the extension. 
 ![Julia VS Code Extension](assets/julia_vscode_extension.png)
 
-- First, start VS Code.
-- Inside VS Code, go to the extensions view either by executing the `View: Show Extensions` command (click View->Command Palette...) or by clicking on the extension icon on the left side of the VS Code window.
-- In the extensions view, simply search for the term `julia` in the marketplace search box, then select the Julia extension and click the install button.
-- You might have to restart VS Code after this step.
+You successfully downloaded the Julia extension for VS Code. 
 
-### Configure the Julia extension
+_NOTE: It is recommended that you restart VS Code after installation._ 
 
-- If you have installed Julia into a standard location on Mac or Windows, or if the Julia binary is on your `PATH`, the Julia VS Code extension should automatically find your Julia installation and you should not need to configure anything.
+### Configuring the Julia extension
 
-- If the extension does not find your Julia installation automatically, or if you want to use a different Julia installation than the default one,
-  - You can set the `julia.executablePath` to the full path of Julia executable that the extension should use. In that case the extension will always use that version of Julia.
-  - To edit your configuration settings,
-    - execute the `Preferences: Open User Settings` command (you can also access it via the menu `File->Preferences->Settings`),
-    - And then make sure your user settings include the `julia.executablePath` setting.
+If you installed Julia into a standard location on Mac or Windows, or if the Julia binary is on your `PATH`, the Julia VS Code extension automatically finds your Julia installation. You do not need to configure the extension. Continue onto the next section. 
 
-    The format of the string should follow your platform specific conventions, and be aware that the backlash `\` is the escape character in JSON, so you need to use `\\` as the path separator character on Windows.
+If the VS Code extension does not find your Julia installation automatically, or you want to use a different Julia installation than the default one, use the following steps to configure the extension.
 
-### Create your first Julia Hello World program
+  1. Set the `julia.executablePath` to the full path of Julia executable that the extension should use. 
+  2. To edit your configuration settings, 
+    - Select **File**, then select **Preferences**, and then click **Settings**. Ensure that your user settings include the `julia.executablePath` setting. 
+    
+_NOTE: The format of the string should follow your platform specific conventions.  Note that the backslash `\` is the escape character in JSON, therefore use `\\` as the path separator character on Windows._
+
+## Creating Your First Julia Hello World program
 
 From the File Explorer toolbar, select the New File button on the hello folder:
 
