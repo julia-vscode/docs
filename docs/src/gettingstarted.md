@@ -36,68 +36,42 @@ If you installed Julia into a standard location on Mac or Windows, or if the Jul
 If the VS Code extension does not find your Julia installation automatically, or you want to use a different Julia installation than the default one, use the following steps to configure the extension.
 
   1. Set the `julia.executablePath` to the full path of Julia executable that the extension should use. 
-  2. To edit your configuration settings, 
-    - Select **File**, then select **Preferences**, and then click **Settings**. Ensure that your user settings include the `julia.executablePath` setting. 
+  2. To edit your configuration settings, select **File**, then select **Preferences**, and then click **Settings**. Ensure that your user settings include the `julia.executablePath` setting. 
     
 _NOTE: The format of the string should follow your platform specific conventions.  Note that the backslash `\` is the escape character in JSON, therefore use `\\` as the path separator character on Windows._
 
 ## Creating Your First Julia Hello World program
 
-From the File Explorer toolbar, select the New File button on the hello folder:
+1. From the File Explorer toolbar, click the **New File** button on the `Hello` folder:
 
 ![Julia VS Code Extension](assets/hello-1.png)
 
-Name the file hello.jl, and it automatically opens in the editor:
+2. Name the file `hello.jl`, and it automatically opens in the editor. 
 
 ![Julia VS Code Extension](assets/hello-2.png)
 
-By using the .jl file extension, you tell VS Code to interpret this file as a Julia program, so that it evaluates the contents with the Julia extension and the selected interpreter.
-Now that you have a code file in your Workspace, enter the following source code in hello.jl:
+The .jl file extension indicates to VS Code that you interpret this file as a Julia program, therefore it evaluates the contents with the Julia extension and the selected interpreter.
+
+3. Enter the following source code in hello.jl:
 
 ```
 msg = "Hello World"
 println(msg)
 ```
 
-### Run Hello World program
+## Running Hello World program
 
-It's simple to run hello.jl with Julia. Just click the Run Julia File in Terminal play button in the top-right side of the editor.
+To run the Hello World program, click **Run: Julia File** in Terminal play button in the top-right side of the editor.
 
 ![Julia VS Code Extension](assets/hello-3.png)
 
-You can see the corresponding output in the terminal
+You can see the corresponding output in the terminal.
 
 ![Julia VS Code Extension](assets/hello-4.png)
 
-Voila! You have just completed your first Julia program. Lets learn more, Here is how you can install a julia package from lots of available packages.
-
-### Installing a package
-
-The package can be installed using Julia package manager or Pkg API.
-
-**Using Package Manager**
-
-Open the Julia terminal in VS Code and type ] to enter the Pkg REPL mode and run:
-
-`pkg> add Documenter`
-
-This command will install the Documenter package
-
-**Using the Pkg API:**
-
-`julia> import Pkg; Pkg.add("Documenter")`
-
-### Next steps
-
-To learn more about the Julia language, follow any of the programming tutorials listed on [Juilalang.org](https://docs.julialang.org/en/v1/) within the context of VS Code.
+Congratulations! You have just completed your first Julia program.
 
 
-There is then much more to explore with Julia in Visual Studio Code:
+## Learn More
 
-- [Editing code](userguide/editingcode.md)
-- [Linting](userguide/linter.md)
-- [Debugging](userguide/debugging.md)
-- [Plot Gallery](userguide/plotgallery.md)
-- [Data Grid](userguide/grid.md)
-- [Compiling SysImages](userguide/compilesysimage.md)
-- [Settings](userguide/settings.md)
+To learn more about the Julia language, see [Juilalang.org](https://docs.julialang.org/en/v1/). To learn more about Julia in Visual Code Studio see [VS Code](https://www.julia-vscode.org/docs/stable/)
