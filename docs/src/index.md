@@ -1,5 +1,7 @@
 # Julia VSCode Documentation
 
+**NOTE**: _This documentation is currently being updated and revamped._
+
 Julia for VSCode is a powerful, free IDE for the Julia language. Visual Studio Code is a powerful and customizable editor. With a completely live environment, Julia for VSCode aims to take the frustration and guesswork out of programming and put the fun back in.  We build on Julia’s unique combination of ease-of-use and performance. Beginners and experts can build better software more quickly, and get to a result faster.
 
 ## Installation/Updates 
