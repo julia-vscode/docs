@@ -23,13 +23,9 @@ makedocs(
             "Remote Development" => "userguide/remote.md",
             "Settings" => "userguide/settings.md"
         ],
-         "Keyboard Shortcuts" => "userguide/keyboard.md"
-        ],
         "What's New" => Any[
             "Version v0.17" => "release-notes/v0_17.md",
             "Version v0.16" => "release-notes/v0_16.md"
-        ],
-         "Privacy" => "userguide/privacy.md"
         ],
         "Developer Documentation" => Any[
             "Overview" => "devdocs/devdocs.md"
