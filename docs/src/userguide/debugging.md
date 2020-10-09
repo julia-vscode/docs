@@ -1,21 +1,13 @@
 # Debugging
 
-The Julia extension supports debugging of all types of Julia programs and applications. In the document We will be doing a short walkthrough of basic debugging. We will demonstrate core skills of debugging like setting breakpoints and stepping through code.
+The Julia extension supports debugging of all types of Julia programs and applications.  
 
-For general debugging features such as inspecting variables, setting breakpoints, and other activities that aren't language-dependent, review [VS Code debugging](https://code.visualstudio.com/docs/editor/debugging).
+For general debugging features such as inspecting variables, setting breakpoints, and other activities that aren't language-dependent, review [VS Code debugging](https://code.visualstudio.com/docs/editor/debugging).  
 
-
-### Example
-
-Lets assume you have a simple project with one Julia file open in VS Code:
-
-![Debugger](../assets/debugger/1.png)
-
-First you should click on the button for the Run view. You will now see the default debugger start panel:
-
-![Debugger](../assets/debugger/2.png)
-
-If you just click on `Run and Debug` (or press `F5`), the current active Julia file will run in the debugger. Output will be shown in a special Julia Debug terminal:
+## Example
+1. Open a Julia file in VS Code. 
+2. Click the **Run** button. You will now see the default debugger start panel:
+3. Click **Run and Debug** (or select `F5`) to run the active Julia fila in the debugger. Output is displayed in the Julia Debug terminal. 
 
 ![Debugger](../assets/debugger/3.png)
 
