@@ -6,7 +6,7 @@ You can help improve the Julia VS Code extension by sending usage statistics and
 
 By default both ``julia.enableTelemetry`` and ``julia.enableCrashReporter`` are set to ``null``.  With the `null` setting, no data is sent to the development team. The UI does send a prompt asking the user to agree to enabling the settings for telemetry and crash report. Without opting in, your data is not sent to the development team. 
 
-# Collected Data
+## Collecting Data
 
 If the ``julia.enableTelemetry`` setting is configured to be ``true``, anonymous, non-identifying usage and error data is sent to the development team.
 
@@ -14,10 +14,10 @@ When the ``julia.enableCrashReporter`` setting is configured to be ``true``, sta
 
 This information is collected and sent via Azure Application Insights.
 
-# Disabling telemetry
+## Disabling Telemetry
 
 To disable telemetry and not report any usage data or crash reports, set the ``julia.enableTelemetry`` and ``julia.enableCrashReporter`` setting to ``false``.
 
-# Use of the collected data
+## Using Collected Data
 
 The collected data is used to improve the julia VS Code extension. We don't sell the information. We might sometimes publish anonymous statistics (for example number of users etc.)
