@@ -22,7 +22,7 @@ You can go to the definition of a symbol by pressing `F12`.
 
 If you press `Ctrl` and hover over a symbol, a preview of the declaration will appear:
 
-![GoToDefination](../images/codenavigation/GoToDefination.png)
+![](https://github.com/JuliaEditorSupport/julia-vscode-documentation/blob/master/media/definition.gif)
 
 > **Tip**: You can jump to the definition with `Ctrl+Click` or open the definition to the side with `Ctrl+Alt+Click`.
 
@@ -32,7 +32,7 @@ You can navigate symbols inside a file with `Ctrl+Shift+O`.
 Enter `:` and the symbols will be grouped by category. 
 Press `Up` or `Down` and navigate to the place you want.
 
-![Go to Symbol](../images/codenavigation/symbols.gif)
+![](https://github.com/JuliaEditorSupport/julia-vscode-documentation/blob/master/media/symbols.gif)
 
 ### Open Symbol by Name
 
