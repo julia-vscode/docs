@@ -33,11 +33,11 @@ Let us set another breakpoint on `line 15` and then continue the program until i
 
 In this view we can evaluate arbitrary Julia code in the context of the current function. For example, we can compute the log of x by running `log(x)` here:
 
-![Debugger](../assets/debugger/9.png)
+![Debugger](../assets/debugger/10.png)
 
 We can also change the value of any local variable while the program is paused. For example, to change the value of x, we can double click in the `Variables` section on the value 27 next to x and then enter any arbitrary Julia expression. The value this expression returns will become the new value for the variable x. In the following example We changed the value of x to a string:
 
-![Debugger](../assets/debugger/10.png)
+![Debugger](../assets/debugger/9.png)
 
 This concludes the very basic walk through. I’ll now want to highlight some other features.
 
@@ -62,7 +62,7 @@ function breakpoints and condition on breakpoints.
 
 ### Function breakpoints
 
-If you click on the little `+` sign in the `BREKPOINTS` view, you can add a function breakpoint. Simply enter the name of the function you want to break on. You can also configure it to only break on specific methods by specifying a signature like `foo(::String, ::Number)`.
+If you click on the little `+` sign in the `BREAKPOINTS` view, you can add a function breakpoint. Simply enter the name of the function you want to break on. You can also configure it to only break on specific methods by specifying a signature like `foo(::String, ::Number)`.
 
 ### Breakpoint conditions
 
