@@ -41,3 +41,29 @@ You will get something like the following graph as a output in a new tab in VSCo
 
 ![Plot Graph](../images/PlotGallery/PlotGraph.png)
 
+## Export Visualization
+### Save Visualization
+You can save plots to disk by clicking on the `Save Plot` button in the plot pane.
+![Copy Plot](../images/PlotGallery/SavePlot.png)
+
+The default plots path is `__plots__`. You can specify a custom path in `.vscode/settings.json`
+
+```
+{
+    "julia.plots.path": "my_custom_path"
+}
+```
+
+![Custom Path](../images/PlotGallery/CustomPath.png)
+
+### Copy Visualization to Clipboard
+
+!!! note
+
+    Linux users:
+    * For X11 systems, `xclip` must be installed.
+    * For wayland systems, `wl-copy` must be installed.
+
+You can copy plots to clipboard by clicking on the `Copy Plot` button in the plot pane.
+
+![Copy Plot](../images/PlotGallery/CopyPlot.png)
