@@ -7,7 +7,7 @@ For general debugging features such as inspecting variables, setting breakpoints
 ## Example
 1. Open a Julia file in VS Code. 
 2. Click the **Run** button. You will now see the default debugger start panel:
-3. Click **Run and Debug** (or select `F5`) to run the active Julia fila in the debugger. Output is displayed in the Julia Debug terminal. 
+3. Click **Run and Debug** (or select `F5`) to run the active Julia file in the debugger. Output is displayed in the Julia Debug terminal. 
 
 ![Debugger](../assets/debugger/3.png)
 
