@@ -1,6 +1,6 @@
 # Getting Started
 
-This guide is intended for new or beginner-level users who are new to the Visual Studio (VS) Code extension. The getting started tasks use the Julia programming language to create a “Hello World” program in VS Code. 
+This guide is intended for new or beginner-level users who are new to the Visual Studio Code extension. The getting started tasks use the Julia programming language to create a “Hello World” program in VS Code. 
 
 ## Prerequisites
 
