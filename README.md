@@ -13,6 +13,7 @@ In order to contribute to the documentation, simply modify the files in the `/do
 Once a PR has been opened, the CI will automatically run [Documenter.jl](https://github.com/JuliaDocs/Documenter.jl) and generate a new documentation against the PR.
 You can see the generate documentation on `https://www.julia-vscode.org/docs/previews/PR##`, where `##` is your PR's number.
 
+Please refer to the VS Code contributing guide [here](https://github.com/microsoft/vscode-docs/blob/main/CONTRIBUTING.md) for details on best practices and how to refer to VS Code correctly.
 
 ## Local build of the Documentation
 
