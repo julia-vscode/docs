@@ -22,7 +22,9 @@ julia> Pkg.add("Plots")
 
 ## Create Visualization
 
-**Remember** to keep the REPL open as this is where any output from your program will be printed.
+!!! note
+
+    Keep the REPL open as this is where any output from your program will be printed.
 
 The first piece of code that you need to execute is this:
 
@@ -55,6 +57,7 @@ You will get something like the following graph as a output in a new tab in VSCo
 ### Save Visualization
 
 You can save plots to disk by clicking on the `Save Plot` button in the plot pane.
+
 ![Copy Plot](../images/PlotGallery/SavePlot.png)
 
 The file picker by default opens in the root of the project. You can specify a custom path in `.vscode/settings.json`.
@@ -73,6 +76,22 @@ The file picker by default opens in the root of the project. You can specify a c
 
     Due to a current limitation in the [ClipboardItem API](https://developer.mozilla.org/en-US/docs/Web/API/ClipboardItem), plots are copied as png.
 
-You can copy plots to clipboard by clicking on the `Copy Plot` button in the plot pane.
+In the plot menu, open more actions menu `...`, and click `Julia: Copy Plot`
 
 ![Copy Plot](../images/PlotGallery/CopyPlot.png)
+
+## Interactivity
+
+### Zooming
+
+Use the mouse scroll wheel to zoom in and out.
+
+!!! note
+
+    To reset zoom double click on the plot.
+
+### Panning
+
+Hover over the plot, grab it and move.
+
+![Panning](../images/PlotGallery/Panning.gif)
