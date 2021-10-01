@@ -12,13 +12,13 @@ By default, all of the packages defined in the `Project.toml` file are included 
 
 Additional options can be passed to further tweak the compilation. In particular, one may want to include script containing the precompile statements or a file to execute certain julia function, which can further reduce the first-call latency. Please read the documentation of [PackageCompiler.jl](https://julialang.github.io/PackageCompiler.jl/stable/) for more details.
 
-This file should be named `vscode-compileenv.toml` and be placed under the project root file. Its content should look like:
+This file should be named `./.vscode/JuliaSysimage.toml` and be placed under the project root file. Its content should look like:
 
 ```
 [sysimage]
-excluded_packages=[]   # Additional packages to be exlucded in the system image.
-precompile_statements_file=[]  # Precompile statements files to be used, Use relative to the project root directory.
-precompile_execution_file=[] # Precompile execution files to be used. Use relative to the project root directory.
+exclude=[]   # Additional packages to be exlucded in the system image
+statements_files=[]  # Precompile statements files to be used, relative to the project folder
+execution_files=[] # Precompile execution files to be used, relative to the project folder
 ```
 
 The build task creates a sysimage that includes all packages in the current Julia environment. This sysimage is saved in the same folder where the `Project.toml` and `Manifest.toml` of the current Julia environment are stored. The name of the sysimage file will be `JuliaSysimage.dll` (Windows) or `JuliaSysimage.so`. 
