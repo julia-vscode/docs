@@ -9,6 +9,7 @@ makedocs(
         "Home" => "index.md",
         # "Setup" => "setup.md",
         "Getting Started" => "gettingstarted.md",
+        "FAQ" => "faq.md",
         "User Guide" => Any[
             "Running Code" => "userguide/runningcode.md",
             "Julia Environments" => "userguide/env.md",
