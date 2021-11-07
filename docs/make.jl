@@ -1,10 +1,13 @@
 using Documenter
 
+# download latest changelog
+download("https://raw.githubusercontent.com/julia-vscode/julia-vscode/master/CHANGELOG.md", joinpath(@__DIR__, "src", "changelog.md"))
+
 makedocs(
     sitename = "Julia in VS Code",
     pages = [
         "Home" => "index.md",
-        # "Setup" => "setup.md", # 
+        # "Setup" => "setup.md",
         "Getting Started" => "gettingstarted.md",
         "User Guide" => Any[
             "Running Code" => "userguide/runningcode.md",
@@ -23,14 +26,14 @@ makedocs(
             "Remote Development" => "userguide/remote.md",
             "Settings" => "userguide/settings.md"
         ],
-        "What's New" => Any[
-            "Version v0.17" => "release-notes/v0_17.md",
-            "Version v0.16" => "release-notes/v0_16.md"
-        ],
+        "Change Log" => "changelog.md",
         "Developer Documentation" => Any[
             "Overview" => "devdocs/devdocs.md"
         ]
-    ]
+    ],
+    format = Documenter.HTML(
+        prettyurls = ("CI" in keys(ENV))
+    )
 )
 
 deploydocs(
