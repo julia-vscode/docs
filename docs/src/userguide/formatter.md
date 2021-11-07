@@ -29,6 +29,4 @@ It's the very same code, though now it's much easier to read.
 
 In order to format your code press `shift + cmd|windows + p` to bring up the command palette and search for `Format Document`
 
-```@raw html
-<img width="741" alt="grafik" src="https://user-images.githubusercontent.com/28377948/135749171-c6708afb-0f08-4268-b041-d24de4226e7f.png">
-```
+![format](../images/format.png)
