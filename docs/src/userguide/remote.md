@@ -14,6 +14,6 @@ Then, you can execute your code on the server the same way you would locally:
 
 When you close the VS Code window, the server-side REPL terminates by default. To make the REPL state persistent across sessions, you have to:
 
-1. Install `tmux`, a terminal multiplexer, on the server (e.g. with `apt install tmux`)
+1. Install `tmux`, [a terminal multiplexer,](https://www.ocf.berkeley.edu/~ckuehl/tmux/) on the server (e.g. with `apt install tmux`)
 2. Toggle the `julia.persistentSession.enabled` setting in the VS Code settings. Note that this setting is available only in the server installation of the Julia extensions, accessible from the "Remote ..." tab of settings:
 ![Location of the persistent sessions setting](../images/remote/remote_persistent_session_setting.png)

@@ -24,7 +24,7 @@ makedocs(
             "Debugging" => "userguide/debugging.md",
             "Compiling Sysimages" => "userguide/compilesysimage.md",
             "Julia Markdown Documents" => "userguide/weave.md",
-            # "Remote Development" => "userguide/remote.md",
+            "Remote Development" => "userguide/remote.md",
             # "Settings" => "userguide/settings.md"
         ],
         "Change Log" => "changelog.md",
