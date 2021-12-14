@@ -1,4 +1,4 @@
-# Plot Gallery
+# Plots
 
 Julia `Plots` provides us with the capability to create visualizations of data.
 
@@ -31,7 +31,7 @@ Let's walkthrough a simple program to understand this:
 Write the following code.
 ```
 using Plots
-x = 1:10; y = rand(10); # These are the plotting data 
+x = 1:10; y = rand(10); # These are the plotting data
 plot(x,y, label="my label")
 ```
 
@@ -40,4 +40,3 @@ Now `Run` this, you can follow the steps [here](https://www.julia-vscode.org/doc
 You will get something like the following graph as a output in a new tab in VS Code:
 
 ![Plot Graph](../images/PlotGallery/PlotGraph.png)
-
