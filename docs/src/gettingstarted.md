@@ -75,4 +75,4 @@ Congratulations! You have just completed your first Julia program.
 ## Learn More
 
 To learn more about the Julia language, see [julialang.org](https://julialang.org).
-To learn more about Julia in Visual Studio Code, countinue browsing around the docs by clicking the ["Running Code"](userguide/runningcode/) button below or using the navigation section on the left.
+To learn more about Julia in Visual Studio Code, countinue browsing around the docs by clicking the ["Running Code"](userguide/runningcode/) in the navigation section on the left.
