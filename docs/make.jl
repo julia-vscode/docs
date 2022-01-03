@@ -15,6 +15,7 @@ makedocs(
             "Julia Environments" => "userguide/env.md",
             "Code Navigation" => "userguide/codenavigation.md",
             "Editing Code" => "userguide/editingcode.md",
+            "Keyboard Shortcuts" => "userguide/keyboard.md",
             "Formatting Code" => "userguide/formatter.md",
             "Plots" => "userguide/plotgallery.md",
             "Table Viewer" => "userguide/grid.md",
