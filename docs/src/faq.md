@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# [Frequently Asked Questions](@id FAQ)
 
 ### The language server fails to precompile. What can I do about that?
 You've probably been directed here by a pop-up like the following
