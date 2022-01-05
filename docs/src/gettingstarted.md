@@ -36,7 +36,8 @@ If you installed Julia into a standard location on Mac or Windows, or if the Jul
 If the VS Code extension does not find your Julia installation automatically, or you want to use a different Julia installation than the default one, use the following steps to configure the extension.
 
   1. Set the `julia.executablePath` to the full path of Julia executable that the extension should use.
-  2. To edit your configuration settings, select **File**, then select **Preferences**, and then click **Settings**. Ensure that your user settings include the `julia.executablePath` setting.
+  2. To edit your configuration settings, select **Code**, then select **Preferences**, and then click **Settings**.
+  3. Ensure that your user settings include the `julia.executablePath` setting.
 
 _NOTE: The format of the string should follow your platform specific conventions.  Note that the backslash `\` is the escape character in JSON, therefore use `\\` as the path separator character on Windows._
 
