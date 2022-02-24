@@ -27,6 +27,7 @@ makedocs(
             "Table Viewer"=>"userguide/grid.md",
             # "Understanding Code" => "userguide/understandingcode.md",
             "Linter"=>"userguide/linter.md",
+            "Profiler"=>"userguide/profiler.md",
             # "Tasks" => "userguide/tasks.md",
             "Debugging"=>"userguide/debugging.md",
             "Compiling Sysimages"=>"userguide/compilesysimage.md",

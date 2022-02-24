@@ -17,19 +17,3 @@ If you have any issues with this setup, check out the [FAQ](@ref) first. If it d
 ## User Manual
 
 The following pages are the user manual. These describe how to install and use the Julia extension on VS Code, along with answer questions most new users encounter.
-
-- [Running Code](https://www.julia-vscode.org/docs/stable/userguide/runningcode/)
-- [Julia Environments](https://www.julia-vscode.org/docs/stable/userguide/env/)
-- [Code Navigation](https://www.julia-vscode.org/docs/stable/userguide/codenavigation/)
-- [Editing Code](https://www.julia-vscode.org/docs/stable/userguide/editingcode/)
-- [Formatting Code](https://www.julia-vscode.org/docs/stable/userguide/formatter/)
-- [Plot Gallery](https://www.julia-vscode.org/docs/stable/userguide/plotgallery/)
-- [Data Grid](https://www.julia-vscode.org/docs/stable/userguide/grid/)
-- [Understanding Code](https://www.julia-vscode.org/docs/stable/userguide/understandingcode/)
-- [Linter](https://www.julia-vscode.org/docs/stable/userguide/linter/)
-- [Tasks](https://www.julia-vscode.org/docs/stable/userguide/tasks/)
-- [Debugging](https://www.julia-vscode.org/docs/stable/userguide/debugging/)
-- [Compiling Sysimages](https://www.julia-vscode.org/docs/stable/userguide/compilesysimage/)
-- [Julia Markdown Documents](https://www.julia-vscode.org/docs/stable/userguide/weave/)
-- [Remote Development](https://www.julia-vscode.org/docs/stable/userguide/remote/)
-- [Settings](https://www.julia-vscode.org/docs/stable/userguide/settings/)
