@@ -1,7 +1,7 @@
 # Formatting Code
 Code formatting is powered by [JuliaFormatter.jl](https://github.com/domluna/JuliaFormatter.jl). Both the `Format Document` command (`Ctrl-Shift-I`) and `Format Selection` (`Ctrl-K Ctrl-F`) are supported.
 
-The default formatting is fairly conservative and unintrusive, but you can customise it with a `.JuliaFormatter.toml` in your workspace. Check out the [relevant documentation here](https://domluna.github.io/JuliaFormatter.jl/stable/).
+The default formatting is fairly conservative and unintrusive, but you can customise it with a `.JuliaFormatter.toml` in your workspace. Check out the [relevant documentation here](https://domluna.github.io/JuliaFormatter.jl/stable/). **Note:** the configuration file _must_ be in the root directory opened in VSCode. This differs from the [standard search rules for JuliaFormatter.jl](https://domluna.github.io/JuliaFormatter.jl/stable/config/#Configuration-File).
 
 Formatting helps to keep code readable by automatically aligning indentations and spaces.
 
