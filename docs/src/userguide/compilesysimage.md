@@ -16,10 +16,14 @@ This file should be named `./.vscode/JuliaSysimage.toml` and be placed under the
 
 ```
 [sysimage]
-exclude=[]   # Additional packages to be exlucded in the system image
-statements_files=[]  # Precompile statements files to be used, relative to the project folder
-execution_files=[] # Precompile execution files to be used, relative to the project folder
+exclude=["Pkg1", "Pkg2"]   # Additional packages to be exlucded in the system image
+statements_files=["relative/path/to/precompile_statements_file.jl", ]
+execution_files="relative/path/to/precompile_excecution_file.jl"
 ```
+The packages to be excluded have to be seperated by commas, each with quotation marks and all inside square brackets.
+The path should be relative to the currently active folder, which can be selected by the command `File: Open Folder...`. The statement or excecution files can be given as a single relative path, or as a list of relative paths.
+
+The statement files should contain precompile statements of the form `precompile(Tuple{typeof(Base.sin), Float64})`, and the excecution files should contain function calls for which the methods should be compiled. 
 
 The build task creates a sysimage that includes all packages in the current Julia environment. This sysimage is saved in the same folder where the `Project.toml` and `Manifest.toml` of the current Julia environment are stored. The name of the sysimage file will be `JuliaSysimage.dll` (Windows) or `JuliaSysimage.so`. 
 
