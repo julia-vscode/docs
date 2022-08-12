@@ -56,4 +56,4 @@ This command runs the entire content of the currently active file in the Julia R
 
 ### Julia: Run File in New Process
 
-Sometimes it's desirable to run your code in a new process (e.g. if you want to be absolutely sure that no state from previosuly run code interferes), so this command will spawn a new Julia process and run the active file in it.
+Sometimes it's desirable to run your code in a new process (e.g. if you want to be absolutely sure that no state from previously run code interferes), so this command will spawn a new Julia process and run the active file in it.
