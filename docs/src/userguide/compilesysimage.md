@@ -18,7 +18,7 @@ This file should be named `./.vscode/JuliaSysimage.toml` and be placed under the
 [sysimage]
 exclude=["Pkg1", "Pkg2"]   # Additional packages to be excluded in the system image
 statements_files=["relative/path/to/precompile_statements_file.jl", ]
-execution_files="relative/path/to/precompile_excecution_file.jl"
+execution_files=["relative/path/to/precompile_execution_file.jl", ]
 ```
 The packages to be excluded have to be separated by commas, each with quotation marks and all inside square brackets.
 The path should be relative to the currently active folder, which can be selected by the command `File: Open Folder...`. The statement or execution files can be given as a single relative path, or as a list of relative paths.
