@@ -12,7 +12,7 @@ By default, all of the packages defined in the `Project.toml` file are included 
 
 Additional options can be passed to further tweak the compilation. In particular, one may want to include script containing the precompile statements or a file to execute certain julia function, which can further reduce the first-call latency. Please read the documentation of [PackageCompiler.jl](https://julialang.github.io/PackageCompiler.jl/stable/) for more details.
 
-This file should be named `./.vscode/JuliaSysimage.toml` and be placed under the project root file. Its content should look like:
+This file should be named `./.vscode/JuliaSysimage.toml` and be placed under the project root folder. For example, the global project root folder for julia 1.6 are found at `~/.julia/environments/v1.6`, so that the `.toml` file could be placed like this: `~/.julia/environments/v1.6/.vscode/JuliaSysimage.toml`. The contents of this file should look like the following:
 
 ```
 [sysimage]
@@ -21,9 +21,9 @@ statements_files=["relative/path/to/precompile_statements_file.jl", ]
 execution_files=["relative/path/to/precompile_execution_file.jl", ]
 ```
 The packages to be excluded have to be separated by commas, each with quotation marks and all inside square brackets.
-The path should be relative to the currently active folder, which can be selected by the command `File: Open Folder...`. The statement or execution files can be given as a single relative path, or as a list of relative paths.
+All path should be relative to the project root folder. The statement or execution files can be given as a single relative path, or as a list of relative paths.
 
-The statement files should contain precompile statements of the form `precompile(Tuple{typeof(Base.sin), Float64})`, and the execution files should contain function calls for which the methods should be compiled. 
+The statement files should contain precompile statements of the form `precompile(Tuple{typeof(Base.sin), Float64})`, and the execution files should contain function calls (an example workflow, e.g. making a plot) for which the methods should be compiled. 
 
 The build task creates a sysimage that includes all packages in the current Julia environment. This sysimage is saved in the same folder where the `Project.toml` and `Manifest.toml` of the current Julia environment are stored. The name of the sysimage file will be `JuliaSysimage.dll` (Windows) or `JuliaSysimage.so`. 
 
