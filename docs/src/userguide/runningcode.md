@@ -47,7 +47,7 @@ The VS Code command `Debug: Start Without Debugging` (Ctrl+F5) by default starts
 
 **Note** that the Julia instance that is started by this command is entirely independent from the Julia REPL that the extension also supports. Thus some features of the integrated REPL such as the plot pane will not be shown when running files with this method.
 
-You can easily customize the behavior of `Run: Start Without Debugging` by creating a [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations). In many situations it is beneficial to not run the currently active file, but instead configure one file in your workspace as the main entry point for your project that is run when you press Ctrl+F5.
+You can easily customize the behavior of `Debug: Start Without Debugging` by creating a [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations). In many situations it is beneficial to not run the currently active file, but instead configure one file in your workspace as the main entry point for your project that is run when you press Ctrl+F5.
 
 Other customization options include *custom working directories*, *command line arguments* or a *specific Julia environment* (that is distinct from the active Julia environment in the VS Code window). Launch configurations also allow you to configure more complex execution scenarios where multiple Julia and non-Julia scripts are started simultaneously via [compound launch configurations](https://code.visualstudio.com/docs/editor/debugging#_compound-launch-configurations).
 
