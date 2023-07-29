@@ -109,3 +109,17 @@ Your code will run a lot faster with this option enabled.
 
 ### Troubleshooting
 If you encounter any issue when using the debugger, Please do let us know about it over at the [Julia VS Code](https://github.com/julia-vscode/julia-vscode) repository.
+
+
+## Settings to speed-up the debugger
+### `ALL_MODULES_EXCEPT_MAIN`
+In order to make the debugger run faster we want to minimize the number of packages/modules which are interpreted.
+Let's say you need to debug the code you wrote, but also the functionality provided by the package Statistics. 
+Click on the Debugger Default Compiled extension setting.
+
+![Debugger](../assets/debugger/16.png)
+
+Configure this setting as in the picture bellow.
+`ALL_MODULES_EXCEPT_MAIN` will make everything run in compiled mode except for Main. We also use "-Statistics." to remove this package from the list of compiled modules, such that it will be interpreted. 
+
+![Debugger](../assets/debugger/17.png)
