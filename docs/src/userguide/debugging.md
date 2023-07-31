@@ -119,7 +119,32 @@ Click on the Debugger Default Compiled extension setting.
 
 ![Debugger](../assets/debugger/16.png)
 
-Configure this setting as in the picture bellow.
-`ALL_MODULES_EXCEPT_MAIN` will make everything run in compiled mode except for Main. We also use "-Statistics." to remove this package from the list of compiled modules, such that it will be interpreted. 
+Configure this setting as follows.
+```
+"julia.debuggerDefaultCompiled": [    
+        "ALL_MODULES_EXCEPT_MAIN",   
+        "-Statistics.",     
+    ]
+```
+`ALL_MODULES_EXCEPT_MAIN` will make all modules run in compiled mode except the Main module, which contains the code you wrote. We also use "-Statistics." to remove this module and all its submodules from the list of compiled modules, such that it will be interpreted. 
+
+### Use a custom sys image
+Custom julia sys images can also be used when debugging. Go to julia-vscode extension settings and click to edit "Additional Args". 
 
 ![Debugger](../assets/debugger/17.png)
+
+
+Once in the settings, use "-J" option followed by your path to the custom sys image. Note this "Additional Args" settings are currently used only when debugging in the REPL mode, see the `@run` macron in the example bellow.
+```
+"julia.additionalArgs": [
+        "-JC:\\temp\\sys_custom.so",
+    ],
+```
+### Example for fast(er) debugging
+In the following code we use the packages GLMakie and Statistics. GLMakie is a plotting package and it's known to have a pretty slow time-to-first-plot(TTFP), especially for julia versions older than 1.9. Interpretting GLMakie is definetely not a thing we want to do when debugging. With the settings above, GLMakie is set to run in compile mode and we also load it from the sys image. Make sure you use the `@run` macro with your root function and debugg in the REPL mode.
+
+![Debugger](../assets/debugger/18.png)
+
+As the debugger hits the desired line of code we can step inside the `mean` function (Statistics) and debug there.
+
+![Debugger](../assets/debugger/19.png)
