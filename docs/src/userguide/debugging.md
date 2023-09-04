@@ -148,3 +148,33 @@ In the following code we use the packages GLMakie and Statistics. GLMakie is a p
 As the debugger hits the desired line of code we can step inside the `mean` function (Statistics) and debug there.
 
 ![Debugger](../assets/debugger/19.png)
+
+## Debugging using external tools
+You can also use the packages _Debugger.jl_ and _Infiltrator.jl_ for debugging, see bellow. Both packages can be used in combination with a custom system image via [julia.additionalArgs](https://www.julia-vscode.org/docs/dev/userguide/debugging/#Use-a-custom-sys-image).
+
+Note: the documentation for externall tools is currently minimal. Visual examples have to de added.
+
+### Debugger.jl
+[Debugger.jl](https://github.com/JuliaDebug/Debugger.jl)
+
+In order to debug _Main_ and also _SomePackage_ while having all the other packages as compiled, we can use the following code in REPL, before debugging using the @run or @enter.
+```
+using SomePackage
+union!(JuliaInterpreter.compiled_modules, setdiff(Base.loaded_modules_array(), [Main, SomePackage]))
+```
+
+Another use-case is to set all modules and submodules in _Base_ as compiled:
+```
+using JuliaInterpreter, MethodAnalysis;
+push!(JuliaInterpreter.compiled_modules, Base)
+union!(JuliaInterpreter.compiled_modules, child_modules(Base));
+```
+
+### Infiltrator.jl
+[Infiltrator.jl](https://github.com/JuliaDebug/Infiltrator.jl)
+
+**@infiltrate**
+It compiles all code, adding only user specified breakpoints (@infiltrate). Compile times and run times are good, but the user can only inspect the local state when a break point is reached. It is not possible to move around the call stack.
+
+**@exfiltrate**
+Simply exports all local variables at the point of call to Main. The idea is that the entire local environment can be inspected at really no runtime or compilation cost. Simple and effective, but one cannot manipulate objects in the context of the calling module.
