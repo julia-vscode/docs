@@ -137,7 +137,7 @@ Custom julia sys images can also be used when debugging. Go to julia-vscode exte
 Once in the settings, use "-J" option followed by your path to the custom sys image. Note this "Additional Args" settings are currently used only when debugging in the REPL mode, see the `@run` macron in the example bellow.
 ```
 "julia.additionalArgs": [
-        "-JC:\\temp\\sys_custom.so",
+        "-J", "C:\\temp\\sys_custom.so",
     ],
 ```
 ### Example for fast(er) debugging
