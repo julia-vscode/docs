@@ -155,7 +155,7 @@ You can also use the packages _Debugger.jl_ and _Infiltrator.jl_ for debugging, 
 Note: the documentation for externall tools is currently minimal. Visual examples have to de added.
 
 ### Debugger.jl
-[Debugger.jl](https://github.com/JuliaDebug/Debugger.jl)
+[Debugger.jl](https://github.com/JuliaDebug/Debugger.jl) requires the debugged code to be interpreted. Of course, interpretting the code is a lot slower compared to the compiled mode, so we want to make sure we interpret only the code we are interested in.
 
 In order to debug _Main_ and also _SomePackage_ while having all the other packages as compiled, we can use the following code in REPL, before debugging using the @run or @enter.
 ```
@@ -171,10 +171,5 @@ union!(JuliaInterpreter.compiled_modules, child_modules(Base));
 ```
 
 ### Infiltrator.jl
-[Infiltrator.jl](https://github.com/JuliaDebug/Infiltrator.jl)
-
-**@infiltrate**
-It compiles all code, adding only user specified breakpoints (@infiltrate). Compile times and run times are good, but the user can only inspect the local state when a break point is reached. It is not possible to move around the call stack.
-
-**@exfiltrate**
-Simply exports all local variables at the point of call to Main. The idea is that the entire local environment can be inspected at really no runtime or compilation cost. Simple and effective, but one cannot manipulate objects in the context of the calling module.
+The _@infiltrate_ macro sets an infiltration point in the code. The advantage of Infiltrator over Debugger is that Infiltrator has neglijible performance overhead. You can inspect the local variables in the current call-stack. The disadvantage is that you cannot step-in or step-over instructions. Instead you can jump to the next infiltration point.
+The full description is here: [Infiltrator.jl](https://github.com/JuliaDebug/Infiltrator.jl)
