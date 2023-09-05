@@ -163,9 +163,9 @@ union!(JuliaInterpreter.compiled_modules, setdiff(Base.loaded_modules_array(), [
 
 Another use-case is to set all modules and submodules in _Base_ as compiled:
 ```
-using JuliaInterpreter, MethodAnalysis;
+using JuliaInterpreter, MethodAnalysis
 push!(JuliaInterpreter.compiled_modules, Base)
-union!(JuliaInterpreter.compiled_modules, child_modules(Base));
+union!(JuliaInterpreter.compiled_modules, child_modules(Base))
 ```
 
 ### Infiltrator.jl
