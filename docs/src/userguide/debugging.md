@@ -152,8 +152,6 @@ As the debugger hits the desired line of code we can step inside the `mean` func
 ## Debugging using external tools
 You can also use the packages _Debugger.jl_ and _Infiltrator.jl_ for debugging, see bellow. Both packages can be used in combination with a custom system image via [julia.additionalArgs](https://www.julia-vscode.org/docs/dev/userguide/debugging/#Use-a-custom-sys-image).
 
-Note: the documentation for externall tools is currently minimal. Visual examples have to de added.
-
 ### Debugger.jl
 [Debugger.jl](https://github.com/JuliaDebug/Debugger.jl) requires the debugged code to be interpreted. Of course, interpretting the code is a lot slower compared to the compiled mode, so we want to make sure we interpret only the code we are interested in.
 
