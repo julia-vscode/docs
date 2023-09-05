@@ -149,24 +149,11 @@ As the debugger hits the desired line of code we can step inside the `mean` func
 
 ![Debugger](../assets/debugger/19.png)
 
-## Debugging using external tools
-You can also use the packages _Debugger.jl_ and _Infiltrator.jl_ for debugging, see bellow. Both packages can be used in combination with a custom system image.
+## Other tools for debugging
+You can also use the packages _Debugger.jl_ and _Infiltrator.jl_ for debugging. These packages offer debugging in REPL and are not connected to the vscode-julia extension. Both packages can be used in combination with a custom system image. They are briefly described bellow. Use the provided links for more information.
 
 ### Debugger.jl
-[Debugger.jl](https://github.com/JuliaDebug/Debugger.jl) requires the debugged code to be interpreted. Of course, interpretting the code is a lot slower compared to the compiled mode, so we want to make sure we interpret only the code we are interested in.
-
-In order to debug _Main_ and also _SomePackage_ while having all the other packages as compiled, we can use the following code in REPL, before debugging using the @run or @enter.
-```
-using SomePackage
-union!(JuliaInterpreter.compiled_modules, setdiff(Base.loaded_modules_array(), [Main, SomePackage]))
-```
-
-Another use-case is to set all modules and submodules in _Base_ as compiled:
-```
-using JuliaInterpreter, MethodAnalysis
-push!(JuliaInterpreter.compiled_modules, Base)
-union!(JuliaInterpreter.compiled_modules, child_modules(Base))
-```
+[Debugger.jl](https://github.com/JuliaDebug/Debugger.jl) uses [JuliaInterpreter.jl](https://github.com/JuliaDebug/JuliaInterpreter.jl) in order to debug the code in REPL. Note that vscode-julia extension also uses JuliaInterpreter, but offers UI based debugging. JuliaInterpreter allows the users to specify which modules will get compiled and which will get interpretted. You can achieve the same behavior as in [`ALL_MODULES_EXCEPT_MAIN`](https://www.julia-vscode.org/docs/dev/userguide/debugging/#ALL_MODULES_EXCEPT_MAIN), but using the REPL.
 
 ### Infiltrator.jl
 The _@infiltrate_ macro sets an infiltration point in the code. The advantage of Infiltrator over Debugger is that Infiltrator has neglijible performance overhead. You can inspect the local variables in the current call-stack. The disadvantage is that you cannot step-in or step-over instructions. Instead you can jump to the next infiltration point.
