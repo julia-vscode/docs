@@ -32,7 +32,7 @@ The REPL that is started with the `Julia: Start REPL` command will have the root
 There are four commands that you can use to run code from your editor in the Julia REPL:
 
 - `Julia: Execute Code in REPL`
-- `Julia: Execute Code Cell in REPL`
+- `Julia: Execute Code Cell in REPL` / `Julia: Execute Code Cell in REPL and Move`
 - `Julia: Execute File in REPL`
 - `Julia: Run File in New Process`
 
@@ -46,7 +46,7 @@ For most users, this should be their default command to run Julia code in the RE
 
 ### Julia: Execute Code Cell in REPL
 
-The extension provides support for demarking code cells in standard Julia files with a specially formatted comment: `##`. This command will identify in which code cell the cursor in the active editor currently is and then execute the code in that cell. If there are no code cells used in the current file, it will execute the entire file.
+The extension provides support for demarking code cells in standard Julia files with a specially formatted comment: `##` or `# %%`. Either symbol must occur the start of a line and can be followed by text. This command will identify in which code cell the cursor in the active editor currently is and then execute the code in that cell. If there are no code cells used in the current file, it will execute the entire file.
 
 This command uses the same code execution techniques as the `Julia: Execute Code Block` command. Include statements, location information etc. all work as expected, that is run with this command.
 
