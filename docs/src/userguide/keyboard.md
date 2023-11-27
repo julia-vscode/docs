@@ -16,7 +16,8 @@ Below are keyboard shortcut reference for three different platforms.
 | `Home`   | Julia: Show First Plot|
 | `End`   | Julia: Show Last Plot|
 | `Shift` + `Delete`  | Julia: Delete All Plots|
-| `Shift` + `Enter` |Julia: Execute Code Cell And Move|
+| `Alt` + `Enter` |Julia: Execute Code Cell|
+| `Alt` + `Shift` + `Enter` |Julia: Execute Code Cell And Move|
 | `Ctrl` + `C` | Julia: Clear Inline Results in Editor|
 | `Ctrl` + `D` | Julia: Clear Current Inline Result|
 | `Alt` + `M` | Julia: Select Current Module| 
@@ -35,7 +36,8 @@ Below are keyboard shortcut reference for three different platforms.
 | `Home`   | Julia: Show First Plot|
 | `End`   | Julia: Show Last Plot|
 | `Shift` + `Delete`  | Julia: Delete All Plots|
-| `Shift` + `Enter` |Julia: Execute Code Cell And Move|
+| `Option` + `Enter` |Julia: Execute Code Cell|
+| `Option` + `Shift` + `Enter` |Julia: Execute Code Cell And Move|
 | `Control` + `C` | Julia: Clear Inline Results in Editor|
 | `Control` + `D` | Julia: Clear Current Inline Result|
 | `Option` + `M` | Julia: Select Current Module| 
@@ -54,7 +56,8 @@ Below are keyboard shortcut reference for three different platforms.
 | `Home`   | Julia: Show First Plot|
 | `End`   | Julia: Show Last Plot|
 | `Shift` + `Delete`  | Julia: Delete All Plots|
-| `Shift` + `Enter` |Julia: Execute Code Cell And Move|
+| `Alt` + `Enter` |Julia: Execute Code Cell|
+| `Shift` + `Alt` + `Enter` |Julia: Execute Code Cell And Move|
 | `Ctrl` + `C` | Julia: Clear Inline Results in Editor|
 | `Ctrl` + `D` | Julia: Clear Current Inline Result|
 | `Alt` + `M` | Julia: Select Current Module| 
