@@ -48,6 +48,8 @@ For most users, this should be their default command to run Julia code in the RE
 
 The extension provides support for demarking code cells in standard Julia files with a specially formatted comment: `##` or `# %%`. Either symbol must occur the start of a line and can be followed by text. This command will identify in which code cell the cursor in the active editor currently is and then execute the code in that cell. If there are no code cells used in the current file, it will execute the entire file.
 
+Cell delimiters can be specified as regex expressions with the `julia.cellDelimiters` user setting. The default being `["^##(?!#)", "^#(\\s?)%%", "^#-"].
+
 This command uses the same code execution techniques as the `Julia: Execute Code Block` command. Include statements, location information etc. all work as expected, that is run with this command.
 
 ### Julia: Execute File in REPL
