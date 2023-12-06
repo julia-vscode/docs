@@ -29,5 +29,5 @@ The build task creates a sysimage that includes all packages in the current Juli
 
 ## Using custom sysimages
 
-When the Julia extension starts a new Julia REPL process, the extension first looks for a custom sysimage file for the current Julia environment. The extension then verifies whether the custom sysimage file is up to date by comparing the last modified date of the sysimage file to the last modified date of the `Manifest.toml` file. If an up to date sysimage file exists, the Julia extension automatically starts the Julia REPL process with the custom sysimage loaded. 
+When the Julia extension starts a new Julia REPL process, the extension first looks for a custom sysimage file for the current Julia environment. The file is looked for in the folder containing the Manifest.toml and Project.toml files the active enviroment. The sysimage filename should be INSERTFILENAME. The extension then verifies whether the custom sysimage file is up to date by comparing the last modified date of the sysimage file to the last modified date of the `Manifest.toml` file. If an up to date sysimage file exists, the Julia extension automatically starts the Julia REPL process with the custom sysimage loaded. 
 This requires the `useCustomSysimage` field to be set to `true` in the application settings of the extension.
