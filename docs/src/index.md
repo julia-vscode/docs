@@ -1,6 +1,6 @@
 # Julia Visual Studio Code Documentation
 
-**NOTE**: _This documentation is currently being updated and revamped. In the meantime, the [CHANGELOG](https://github.com/julia-vscode/julia-vscode/blob/master/CHANGELOG.md) and pull requests linked within may serve as a useful reference of as yet undocumented features._
+**NOTE**: _This documentation is currently being updated and revamped. In the meantime, the [CHANGELOG](https://github.com/julia-vscode/julia-vscode/blob/main/CHANGELOG.md) and pull requests linked within may serve as a useful reference of as yet undocumented features._
 
 Julia for Visual Studio Code is a powerful, free IDE for the Julia language. Visual Studio Code is a powerful and customizable editor. With a completely live environment, Julia for VS Code aims to take the frustration and guesswork out of programming and put the fun back in.  We build on Julia’s unique combination of ease-of-use and performance. Beginners and experts can build better software more quickly, and get to a result faster. Julia is an officially supported language on the [VS Code docs](https://code.visualstudio.com/docs/languages/julia).
 

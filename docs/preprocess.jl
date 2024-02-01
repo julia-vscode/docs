@@ -21,7 +21,7 @@ function generate_keybindings()
         println(io, "# Keybindings & Commands")
 
         println(io, """
-        This page was auto-generated from [julia-vscode's package.json](https://github.com/julia-vscode/julia-vscode/blob/master/package.json)
+        This page was auto-generated from [julia-vscode's package.json](https://github.com/julia-vscode/julia-vscode/blob/main/package.json)
         version $(package["version"]).
         """)
 
