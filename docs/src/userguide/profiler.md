@@ -3,7 +3,7 @@
 Julia comes with it's own [sampling profiler](https://docs.julialang.org/en/v1/stdlib/Profile/) and there are [various packages](https://github.com/timholy/FlameGraphs.jl) to visualize these profile traces.
 
 The VS Code extension comes with it's own profile viewer. Profiling the example function from the [ProfileView.jl readme](https://github.com/timholy/ProfileView.jl)
-```
+```julia
 function profile_test(n)
     for i = 1:n
         A = randn(100,100,20)

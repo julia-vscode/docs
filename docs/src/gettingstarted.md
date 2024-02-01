@@ -55,7 +55,7 @@ The .jl file extension indicates to VS Code that you interpret this file as a Ju
 
 3. Enter the following source code in hello.jl:
 
-```
+```julia
 msg = "Hello World"
 println(msg)
 ```

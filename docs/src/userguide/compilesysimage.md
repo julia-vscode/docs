@@ -14,7 +14,7 @@ Additional options can be passed to further tweak the compilation. In particular
 
 This file should be named `./.vscode/JuliaSysimage.toml` and be placed under the project root file. Its content should look like:
 
-```
+```toml
 [sysimage]
 exclude=["Pkg1", "Pkg2"]   # Additional packages to be excluded in the system image
 statements_files=["relative/path/to/precompile_statements_file.jl", ]
