@@ -3,9 +3,9 @@ using Documenter
 include("preprocess.jl")
 
 # download latest changelog
-download("https://raw.githubusercontent.com/julia-vscode/julia-vscode/master/CHANGELOG.md", joinpath(@__DIR__, "src", "changelog.md"))
+download("https://raw.githubusercontent.com/julia-vscode/julia-vscode/main/CHANGELOG.md", joinpath(@__DIR__, "src", "changelog.md"))
 # download package.json so we can generate an overview over keybindings/commands/...
-download("https://raw.githubusercontent.com/julia-vscode/julia-vscode/master/package.json", joinpath(@__DIR__, "src", "package.json"))
+download("https://raw.githubusercontent.com/julia-vscode/julia-vscode/main/package.json", joinpath(@__DIR__, "src", "package.json"))
 
 generate_keybindings()
 

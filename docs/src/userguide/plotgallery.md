@@ -6,20 +6,20 @@ Julia `Plots` provides us with the capability to create visualizations of data.
 First, `Open` the Julia Terminal (also known as REPL), you can follow the steps [here](https://www.julia-vscode.org/docs/stable/userguide/runningcode/#The-Julia-REPL-1).
 
 At the Julia prompt in the REPL window, type the following:
-```
+```julia-repl
 julia> using Pkg
 ```
 This will tell Julia that you are going to use the package manager.
 
 Then type the following to add `Plots` package:
-```
+```julia-repl
 julia> Pkg.add("Plots")
 ```
 ## Create Visualization
 **Remember** to keep the REPL open as this is where any output from your program will be printed.
 
 The first piece of code that you need to execute is this:
-```
+```julia
 using Plots
 ```
 This tells Julia to load the library that we will use to create our visualizations.
@@ -29,7 +29,7 @@ This tells Julia to load the library that we will use to create our visualizatio
 Let's walkthrough a simple program to understand this:
 
 Write the following code.
-```
+```julia
 using Plots
 x = 1:10; y = rand(10); # These are the plotting data
 plot(x,y, label="my label")
