@@ -2,7 +2,7 @@
 
 Julia comes with it's own [sampling profiler](https://docs.julialang.org/en/v1/stdlib/Profile/) and there are [various packages](https://github.com/timholy/FlameGraphs.jl) to visualize these profile traces.
 
-The VS Code extension comes with it's own profile viewer. Profiling the example function from the [ProfileView.jl readme](https://github.com/timholy/ProfileView.jl)
+The VS Code extension comes with it's own profile viewer that can be used to profile execution time (`@profview`) and allocations (`@profview_allocs`). Profiling the example function from the [ProfileView.jl readme](https://github.com/timholy/ProfileView.jl)
 ```julia
 function profile_test(n)
     for i = 1:n
@@ -33,3 +33,6 @@ The tooltip will tell you the number of samples collect in a certain frame as we
 The inline view shows you how much of the parent frame's samples originate on which line (and also the flags, as above, when hovering over the start of the inline annotation):
 
 ![inline](../images/profiler3.png)
+
+## Allocations
+The macro `@profview_allocs` is used to profile allocations, and work similarly. Allocations can be measured either by count or size, and is selected in the dropdown menu at the top of the flamegraph viewer.
