@@ -20,6 +20,8 @@ end
 @profview profile_test(1)
 # pure runtime
 @profview profile_test(10)
+# viewing allocations
+@profview_allocs profile_test(100)
 ```
 shows a flame graph and inline annotations:
 ![profiler 1](../images/profiler1.png)
