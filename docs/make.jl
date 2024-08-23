@@ -33,6 +33,7 @@ makedocs(
             "Compiling Sysimages"=>"userguide/compilesysimage.md",
             "Julia Markdown Documents"=>"userguide/weave.md",
             "Remote Development"=>"userguide/remote.md",
+            "Test Item Framework"=>"userguide/testitems.md"
             # "Settings" => "userguide/settings.md"
         ],
         "Change Log" => "changelog.md",
