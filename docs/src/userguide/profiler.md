@@ -3,6 +3,7 @@
 Julia comes with it's own [sampling profiler](https://docs.julialang.org/en/v1/stdlib/Profile/) to measure the CPU time spent in functions or the number and size of allocations.  There are [various packages](https://github.com/timholy/FlameGraphs.jl) to visualize these profile traces.
 
 The VS Code extension comes with helpful macros `@profview` and `@profview_allocs` to run these profilers, and its own profile viewer.  Profiling the example function from the [ProfileView.jl readme](https://github.com/timholy/ProfileView.jl)
+
 ```julia
 function profile_test(n)
     for i = 1:n
@@ -21,6 +22,8 @@ end
 # pure runtime
 @profview profile_test(10)
 ```
+**NOTE:** You must run the `@profview` or `@profview_allocs` macros (and associated function call) in the REPL *in* VS Code. If the REPL terminal window is already open, then you can simply type `@profview profile_test(10)`. Otherwise you can select `Julia: Execute active file in REPL`.
+
 shows a flame graph and inline annotations:
 ![profiler 1](../images/profiler1.png)
 
