@@ -5,6 +5,8 @@ The test item framework is a set of packages and UI features that make it easy t
 The main benefit of this framework is that test code can be structured into test items that can then easily be run
 individually.
 
+The Julia VS Code extension has extensive support for the test item framework, but the test item framework itself can used completely independently of VS Code. One can write test items and run them with the command line interface (or just the standard `Pkg.test` functionality) without ever using VS Code.
+
 ## Writing test items
 
 The core feature of the test item framework is that you can structure tests into `@testitem` blocks and then individually run those, rather than having to run all your tests at once. A typical `@testitem` might look like this:
