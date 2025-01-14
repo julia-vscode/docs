@@ -126,7 +126,7 @@ Configure this setting as follows.
         "-Statistics.",     
     ]
 ```
-`ALL_MODULES_EXCEPT_MAIN` will make all modules run in compiled mode except the Main module, which contains the code you wrote. We also use "-Statistics." to remove this module and all its submodules from the list of compiled modules, such that it will be interpreted. 
+`ALL_MODULES_EXCEPT_MAIN` will make all modules run in compiled mode except the Main module, which contains the code you wrote. We also use "-Statistics." to remove this module and all its submodules from the list of compiled modules, such that it will be interpreted. For this change to apply, run "Julia: Apply default compiled modules/functions" from the VSCode Command Palette.
 
 ### Use a custom sys image
 Custom julia sys images can also be used when debugging. Go to julia-vscode extension settings and click to edit "Additional Args". 
