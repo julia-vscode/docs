@@ -41,6 +41,8 @@ If the VS Code extension does not find your Julia installation automatically, or
 
 _NOTE: The format of the string should follow your platform specific conventions.  Note that the backslash `\` is the escape character in JSON, therefore use `\\` as the path separator character on Windows._
 
+If you want to use a different Julia executable command for the LanguageServer runtime you can set it by setting the `julia.languageServerExecutablePath` setting. This is helpful in cases when you want to run the Julia REPL with a sysimage and the LanguageServer without a sysimage.
+
 ## Creating Your First Julia Hello World program
 
 1. From the File Explorer toolbar, click the **New File** button on the `Hello` folder:
