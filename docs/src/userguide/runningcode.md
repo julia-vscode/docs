@@ -46,9 +46,9 @@ For most users, this should be their default command to run Julia code in the RE
 
 ### Julia: Execute Code Cell in REPL
 
-The extension provides support for demarking code cells in standard Julia files with a specially formatted comment: `##` or `# %%`. Either symbol must occur the start of a line and can be followed by text. This command will identify in which code cell the cursor in the active editor currently is and then execute the code in that cell. If there are no code cells used in the current file, it will execute the entire file.
+The extension provides support for demarking code cells in standard Julia files with a specially formatted comment: `##` or `# %%`. Either symbol must occur the start of a line and can be followed by text. In addition, [Literate.jl](https://fredrikekre.github.io/Literate.jl/v2/fileformat/#Syntax) separators are also supported as `#-`, or `#` followed by a space and any number of `#`s. For the Literate.jl separators, whitespace is allowed before the leading `#`. This command will identify in which code cell the cursor in the active editor currently is and then execute the code in that cell. If there are no code cells used in the current file, it will execute the entire file.
 
-Cell delimiters can be specified as regex expressions with the `julia.cellDelimiters` user setting. The default being `["^##(?!#)", "^#(\\s?)%%", "^#-"].
+Cell delimiters can be specified as regex expressions with the `julia.cellDelimiters` user setting. The default being `["^\\s?#\\s#+", "^##(?!#)", "^#(\\s?)%%", "^#-"].
 
 This command uses the same code execution techniques as the `Julia: Execute Code Block` command. Include statements, location information etc. all work as expected, that is run with this command.
 
