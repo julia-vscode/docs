@@ -2,23 +2,6 @@
 
 The Julia extension provides a number of different ways to run your Julia code. This section describes all these options, except how to run code in the debugger, which is covered in a separate part of the documentation.
 
-## Running a Julia file
-
-The VS Code command `Run: Start Without Debugging` (Ctrl+F5) by default starts a new Julia instance and runs the currently active Julia file. The command automatically creates a new VS Code terminal for this Julia process.
-
-**Note** that the Julia instance that is started by this command is entirely independent from the Julia REPL that the extension also supports.
-
-You can easily customize the behavior of `Run: Start Without Debugging` by creating a [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations). In many situations it is beneficial to not run the currently active file, but instead configure one file in your workspace as the main entry point for your project that is run when you press Ctrl+F5.
-
-Other customization options include *custom working directories*, *command line arguments* or a *specific Julia environment* (that is distinct from the active Julia environment in the VS Code window). Launch configurations also allow you to configure more complex execution scenarios where multiple Julia and non-Julia scripts are started simultaneously via [compound launch configurations](https://code.visualstudio.com/docs/editor/debugging#_compound-launch-configurations).
-
-The Julia extension itself supports the following launch configuration attributes:
-
-- `program`: a path to a .jl file. This is the Julia file that will be run when this launch configuration is used. If this attribute is not specified, it defaults to the currently active Julia file in the editor.
-- `cwd`: a path to a folder. The Julia process that is started by the launch configuration will use this path as the initial working directory. If this attribute is not specified, it defaults to the root working folder open in VS Code.
-- `juliaEnv`: a path to a Julia project. The Julia process will be started with this Julia project as the active project. If this attribute is not specified, it defaults to the currently active Julia environment in the VS Code window.
-- `args`: an array of command line arguments. The values specified in this list will be passed as command line arguments to the Julia process that is started and are available via the `Base.ARGS` variable in the Julia script. If this attribute is not specified, no command line arguments are passed to the Julia instance.
-
 ## The Julia REPL
 
 The Julia extension provides a Julia REPL inside VS Code. You can start this REPL with the `Julia: Start REPL` command.
@@ -54,8 +37,25 @@ This command uses the same code execution techniques as the `Julia: Execute Code
 
 ### Julia: Execute File in REPL
 
-This command runs the entire content of the currently active file in the Julia REPL. It uses the same code execution techniques as the `Julia: Execute Code Block` command. Include statements, location information etc. all work as expected, that is run with this command.
+This command runs the entire content of the currently active file in the Julia REPL. It uses the same code execution techniques as the `Julia: Execute Code Block` command. Include statements, location information etc. all work as expected with this command. The ▶️ button in the top-right corner of the file editor window will by default execute this command.
 
 ### Julia: Run File in New Process
 
 Sometimes it's desirable to run your code in a new process (e.g. if you want to be absolutely sure that no state from previously run code interferes), so this command will spawn a new Julia process and run the active file in it.
+
+## Running a Julia file with a Custom Configuration
+
+The VS Code command `Debug: Start Without Debugging` (Ctrl+F5) by default starts a new Julia instance and runs the currently active Julia file. The command automatically creates a new VS Code terminal for this Julia process.
+
+**Note** that the Julia instance that is started by this command is entirely independent from the Julia REPL that the extension also supports. Thus some features of the integrated REPL such as the plot pane will not be shown when running files with this method.
+
+You can easily customize the behavior of `Debug: Start Without Debugging` by creating a [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations). In many situations it is beneficial to not run the currently active file, but instead configure one file in your workspace as the main entry point for your project that is run when you press Ctrl+F5.
+
+Other customization options include *custom working directories*, *command line arguments* or a *specific Julia environment* (that is distinct from the active Julia environment in the VS Code window). Launch configurations also allow you to configure more complex execution scenarios where multiple Julia and non-Julia scripts are started simultaneously via [compound launch configurations](https://code.visualstudio.com/docs/editor/debugging#_compound-launch-configurations).
+
+The Julia extension itself supports the following launch configuration attributes:
+
+- `program`: a path to a .jl file. This is the Julia file that will be run when this launch configuration is used. If this attribute is not specified, it defaults to the currently active Julia file in the editor.
+- `cwd`: a path to a folder. The Julia process that is started by the launch configuration will use this path as the initial working directory. If this attribute is not specified, it defaults to the root working folder open in VS Code.
+- `juliaEnv`: a path to a Julia project. The Julia process will be started with this Julia project as the active project. If this attribute is not specified, it defaults to the currently active Julia environment in the VS Code window.
+- `args`: an array of command line arguments. The values specified in this list will be passed as command line arguments to the Julia process that is started and are available via the `Base.ARGS` variable in the Julia script. If this attribute is not specified, no command line arguments are passed to the Julia instance.
