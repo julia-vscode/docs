@@ -41,6 +41,7 @@ makedocs(
         ]
     ],
     format = Documenter.HTML(
+        inventory_version = "",
         prettyurls = ("CI" in keys(ENV))
     )
 )
