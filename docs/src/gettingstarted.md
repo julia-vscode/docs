@@ -47,20 +47,20 @@ If you want to use a different Julia executable command for the LanguageServer r
 
 1. From the File Explorer toolbar, click the **New File** button on the `Hello` folder:
 
-![Julia VS Code Extension](assets/hello-1.png)
+   ![Julia VS Code Extension](assets/hello-1.png)
 
 2. Name the file `hello.jl`, and it automatically opens in the editor.
 
-![Julia VS Code Extension](assets/hello-2.png)
+   ![Julia VS Code Extension](assets/hello-2.png)
 
-The .jl file extension indicates to VS Code that you interpret this file as a Julia program, therefore it evaluates the contents with the Julia extension and the selected interpreter.
+   The .jl file extension indicates to VS Code that you interpret this file as a Julia program, therefore it evaluates the contents with the Julia extension and the selected interpreter.
 
 3. Enter the following source code in hello.jl:
 
-```julia
-msg = "Hello World"
-println(msg)
-```
+   ```julia
+   msg = "Hello World"
+   println(msg)
+   ```
 
 ## Running Hello World program
 
