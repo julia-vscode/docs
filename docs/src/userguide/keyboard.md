@@ -9,6 +9,7 @@ Below are keyboard shortcut reference for three different platforms.
 | `Alt` + `E`      | Julia: Change Current Environment|
 | `Alt` + `O`   | Julia: Start REPL|
 | `Alt` + `K`   | Julia: Stop REPL|
+| `Ctrl` + `L` | Julia: Clear REPL|
 | `Ctrl` + `Enter`   | Julia: Send Current Line or Selection to REPL|
 | `Alt` + `Enter`   | Julia: Execute Code And Move|
 | `RightArrow`, `DownArrow`, `PageDown`   | Julia: Show Next Plot|
