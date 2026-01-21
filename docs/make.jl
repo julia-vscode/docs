@@ -13,7 +13,7 @@ makedocs(
     sitename = "Julia in VS Code",
     pages = [
         "Home" => "index.md",
-        # "Setup" => "setup.md",
+        "Setup" => "setup.md",
         "Getting Started" => "gettingstarted.md",
         "FAQ" => "faq.md",
         "User Guide" => Any[
@@ -25,15 +25,15 @@ makedocs(
             "Formatting Code"=>"userguide/formatter.md",
             "Plots"=>"userguide/plotgallery.md",
             "Table Viewer"=>"userguide/grid.md",
-            # "Understanding Code" => "userguide/understandingcode.md",
+            "Understanding Code" => "userguide/understandingcode.md",
             "Linter"=>"userguide/linter.md",
             "Profiler"=>"userguide/profiler.md",
-            # "Tasks" => "userguide/tasks.md",
+            "Tasks" => "userguide/tasks.md",
             "Debugging"=>"userguide/debugging.md",
             "Julia Markdown Documents"=>"userguide/weave.md",
             "Remote Development"=>"userguide/remote.md",
             "Test Item Framework"=>"userguide/testitems.md"
-            # "Settings" => "userguide/settings.md"
+            "Settings" => "userguide/settings.md"
         ],
         "Change Log" => "changelog.md",
         "Developer Documentation" => Any[
