@@ -45,6 +45,17 @@ end
 
 If you don’t like this inline `@testitem` style, you can also just put `@testitem` blocks into Julia files in your test folder.
 
+## Controlling which files are searched
+
+By default every `.jl` file in your project is searched for `@testitem`s. If that is not what you want — say the project contains vendored or generated code with test items you have no interest in running, or scratch files you keep around for debugging — add a `JuliaTestItems.toml` file to your project:
+
+```toml
+include = ["src/**", "test/**"]
+exclude = ["test/manual/**"]
+```
+
+Excluded files never show up in the Testing view and never run. See [Configuration Files](configuration.md) for the pattern syntax and the rest of the details.
+
 ## Running test items inside VS Code
 
 When you open a Julia package inside VS Code and have the [Julia extension](https://www.julia-vscode.org/) installed it will constantly (after every keypress!) look for any and all `@testitem`s in your Julia files. If any are found, they will appear in various places in the UI.
