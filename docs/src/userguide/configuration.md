@@ -30,6 +30,13 @@ Here `src/MyPackage.jl` is configured by `src/JuliaLint.toml` alone. Nothing fro
 
 This means a nested config file has to repeat anything it wants to keep from its parent — the easiest way to write one is to copy the parent file and edit the copy. What you get in return is that working out how a folder is configured is always a matter of reading a single file. Most projects only ever need one config file, in the root.
 
+Because replacing a config silently would be a nasty surprise, a config file that has another of the same kind above it is flagged with a warning naming the file it takes over from. That is usually what you want to know — the common way a stray config appears is a vendored repository or a copied example, where the shadowing is accidental. If a subtree is meant to be independent, turn the warning off in it:
+
+```toml
+[rules]
+shadowed_config = "off"
+```
+
 The file names are matched without regard to case, so `JuliaLint.toml` and `julialint.toml` both work. A leading dot does not: `.JuliaLint.toml` is ignored.
 
 ## Choosing which files are affected
@@ -116,6 +123,8 @@ preset = "minimal"
 nothing_comparison = "error"
 ```
 
+A preset name tracks the extension rather than freezing a fixed set of rules, so an update can change what it reports. New rules are added to existing presets switched off, so an update should not start flooding you with problems you did not ask for.
+
 ### Quick fixes follow the rules
 
 When you turn a rule off, the lightbulb quick fix that would have fixed it disappears too — there is no point offering to fix something you have said you do not want to hear about. Refactorings such as **Expand function** are not affected, because they are editor features rather than fixes for a problem.
@@ -134,6 +143,7 @@ When you turn a rule off, the lightbulb quick fix that would have fixed it disap
 | `include_errors` | `warning` | Circular, duplicate or missing `include`s |
 | `syntax_errors` | `error` | Julia syntax errors |
 | `testitem_errors` | `error` | Malformed `@testitem` blocks |
+| `shadowed_config` | `warning` | A config file that supersedes another above it |
 
 There are 27 rules in total. The full list is in the [JuliaLint documentation](https://github.com/julia-vscode/JuliaLint.jl#configuration).
 
