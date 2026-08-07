@@ -145,7 +145,7 @@ When you turn a rule off, the lightbulb quick fix that would have fixed it disap
 | `testitem_errors` | `error` | Malformed `@testitem` blocks |
 | `shadowed_config` | `warning` | A config file that supersedes another above it |
 
-There are 27 rules in total. The full list is in the [JuliaLint documentation](https://github.com/julia-vscode/JuliaLint.jl#configuration).
+There are 27 rules in total. The full list is in the [JuliaLintApp documentation](https://github.com/julia-vscode/JuliaLintApp.jl#configuration).
 
 ## Formatting: `JuliaFormat.toml`
 
