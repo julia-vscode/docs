@@ -137,7 +137,7 @@ Custom julia sys images can also be used when debugging. Go to julia-vscode exte
 Once in the settings, use "-J" option followed by your path to the custom sys image. Note this "Additional Args" settings are currently used only when debugging in the REPL mode, see the `@run` macron in the example bellow.
 ```json
 "julia.additionalArgs": [
-        "-JC:\\temp\\sys_custom.so",
+        "-J", "C:\\temp\\sys_custom.so",
     ],
 ```
 ### Example for fast(er) debugging
@@ -148,3 +148,13 @@ In the following code we use the packages GLMakie and Statistics. GLMakie is a p
 As the debugger hits the desired line of code we can step inside the `mean` function (Statistics) and debug there.
 
 ![Debugger](../assets/debugger/19.png)
+
+## Other tools for debugging
+You can also use the packages _Debugger.jl_ and _Infiltrator.jl_ for debugging. These packages offer debugging in REPL and are not connected to the vscode-julia extension. Both packages can be used in combination with a custom system image. They are briefly described bellow. Use the provided links for more information.
+
+### Debugger.jl
+[Debugger.jl](https://github.com/JuliaDebug/Debugger.jl) uses [JuliaInterpreter.jl](https://github.com/JuliaDebug/JuliaInterpreter.jl) in order to debug the code in REPL. Note that vscode-julia extension also uses JuliaInterpreter, but offers UI based debugging. JuliaInterpreter allows the users to specify which modules will get compiled and which will get interpretted. You can achieve the same behavior as in [`ALL_MODULES_EXCEPT_MAIN`](https://www.julia-vscode.org/docs/dev/userguide/debugging/#ALL_MODULES_EXCEPT_MAIN), but using the REPL.
+
+### Infiltrator.jl
+The _@infiltrate_ macro sets an infiltration point in the code. The advantage of Infiltrator over Debugger is that Infiltrator has neglijible performance overhead. You can inspect the local variables in the current call-stack. The disadvantage is that you cannot step-in or step-over instructions. Instead you can jump to the next infiltration point.
+The full description is here: [Infiltrator.jl](https://github.com/JuliaDebug/Infiltrator.jl)
