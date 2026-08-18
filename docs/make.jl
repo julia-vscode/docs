@@ -43,7 +43,8 @@ makedocs(
     ],
     format = Documenter.HTML(
         inventory_version = "",
-        prettyurls = ("CI" in keys(ENV))
+        prettyurls = ("CI" in keys(ENV)),
+        size_threshold_ignore = ["changelog.md"]
     )
 )
 
