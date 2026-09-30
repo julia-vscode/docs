@@ -4,7 +4,7 @@ Some of what the extension does is configured per project rather than in VS Code
 
 | File | Controls |
 | --- | --- |
-| `JuliaLint.toml` | Which problems are reported, and how severe they are |
+| `JuliaLint.toml` | Which problems are reported, how severe they are, and which environments are loaded |
 | `JuliaFormat.toml` | How your code is formatted |
 | `JuliaTestItems.toml` | Which files are searched for test items |
 
@@ -146,6 +146,20 @@ When you turn a rule off, the lightbulb quick fix that would have fixed it disap
 | `shadowed_config` | `warning` | A config file that supersedes another above it |
 
 There are 27 rules in total. The full list is in the [LintApp documentation](https://github.com/julia-vscode/LintApp.jl#configuration).
+
+### Keeping environments out
+
+Every `Project.toml` and `Manifest.toml` in your workspace is treated as a Julia environment, and each one is resolved and indexed in its own background process. Usually that is what you want, but a folder holding copies of your project — git worktrees, build caches, scratch checkouts — or a nested environment with heavy dependencies can make this slow and use a lot of memory.
+
+`exclude-environments` lists glob patterns, relative to the config file's folder, of project and manifest files to ignore:
+
+```toml
+exclude-environments = ["worktrees/**", "**/benchmark/Project.toml"]
+```
+
+This only affects which environments are loaded. The `.jl` files in those folders are still linted, unless `exclude` covers them too.
+
+A nested `JuliaLint.toml` cannot bring an environment back: one excluded by a config file higher up stays excluded, whatever the config files closer to it say.
 
 ## Formatting: `JuliaFormat.toml`
 
